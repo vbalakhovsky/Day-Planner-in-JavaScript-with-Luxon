@@ -21,8 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/1.25.0/luxon.min.js" integrity="sha512-OyrI249ZRX2hY/1CAD+edQR90flhuXqYqjNYFJAiflsKsMxpUYg5kbDDAVA8Vp0HMlPG/aAl1tFASi1h4eRoQw==" crossorigin="anonymous"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
-    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>-->
+   
     <title>Work Day Scheduler</title>
   </head>
 
@@ -33,6 +32,9 @@
       <p id="currentDay" class="lead"></p>
     </header>
    
+    <div class ="dailyQuote">
+
+    </div>
    
     <div class="container">
       <div class="container text-right  plannerDiv">
@@ -45,7 +47,7 @@
 
 
             <div class="input-group  col-10 form-group">
-                <textarea id=text9AM class="hour  form-control custom-control textborder" rows="2" style="resize:none"
+                <textarea id=text9AM class="hour form-control custom-control textborder" rows="2" style="resize:none"
                     name="9"></textarea>
 
                 <button class="col-1 saveBtn"> <i class="fas fa-save"></i></button>
@@ -120,14 +122,14 @@
             <div class="input-group col-10 form-group">
                 <textarea id=text2PM class=" hour form-control custom-control textborder" rows="2" style="resize:none"
                     name="14"></textarea>
-                <button class="  col-1 saveBtn   "> <i class="fas fa-save"></i></button>
+                <button class="col-1 saveBtn "> <i class="fas fa-save"></i></button>
             </div>
         </div>
 
 
         <div class="row row15 ">
 
-            <div class="   input-group  col-1">
+            <div class="input-group  col-1">
                 <p class="border-bottom">3pm</p>
 
             </div>
@@ -164,7 +166,10 @@
                 <button class="  col-1 saveBtn   "> <i class="fas fa-save"></i></button>
             </div>
         </div>
+
+  
 <script src="main.js"></script>
+<script src="quote.js"></script>
        
      
     
