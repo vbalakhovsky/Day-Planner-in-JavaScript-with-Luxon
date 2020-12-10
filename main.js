@@ -21,6 +21,7 @@ var now = today.get("hour");
         var name = parseInt($(this).attr("name"));
         if (name < now) {
             $(this).addClass("past");
+           
         }
 
 
@@ -37,7 +38,7 @@ var now = today.get("hour");
 
     $("button").on("click", function () {
 
-        //setting items in the local storage
+        
         localStorage.setItem("9AM", ($text9AM.val()))
         localStorage.setItem("10AM", ($text10AM.val()))
         localStorage.setItem("11AM", ($text11AM.val()))
@@ -50,7 +51,7 @@ var now = today.get("hour");
 
     })
 
-    //getting the content stored and sending to the screen. When page is refreshed content will stay
+   
     $("#text9AM").append(localStorage.getItem("9AM"));
     $("#text10AM").append(localStorage.getItem("10AM"));
     $("#text11AM").append(localStorage.getItem("11AM"));
