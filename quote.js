@@ -31,12 +31,9 @@ $.getJSON(url, function(quote){
 
     console.log(quote);
   
-    $(".dailyQuote").text(" Today's Quote: " + quote.quoteText + " by " + quote.quoteAuthor);
+    $(".dailyQuote").text(" Today's Quote: " + quote.quoteText + "  Author:  " + quote.quoteAuthor);
   
-   
-  
-    $(".dailyQuote").append("<code>" + JSON.stringify(data, null, '<br/>') + "</code>");
-  
+        
   });
 
  
